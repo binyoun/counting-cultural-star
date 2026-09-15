@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counting Cultural Stars — ISEA 2026 Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #030209;
+    --bg-alt: #0a0c1e;
+    --line: #23264a;
+    --text: #eef0ff;
+    --muted: #9aa1c9;
+    --accent: #8fd6ff;
+    --accent-2: #ff9ec4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 80% 10%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 30% 85%, rgba(255,255,255,0.4), transparent),
+      radial-gradient(1px 1px at 90% 60%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 45% 40%, rgba(255,255,255,0.5), transparent);
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  .label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 10px 0 6px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.25;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 10px;
+    margin: 48px 0 20px;
+  }
+  table.basic-info {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--line);
+  }
+  table.basic-info th,
+  table.basic-info td {
+    text-align: left;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.basic-info th {
+    width: 34%;
+    background: var(--bg-alt);
+    font-weight: 600;
+    color: var(--text);
+  }
+  table.basic-info td { color: var(--muted); }
+  table.basic-info td a { color: var(--accent); text-decoration: none; }
+  table.basic-info td a:hover { text-decoration: underline; }
+  .pillar {
+    font-style: italic;
+    color: var(--text);
+  }
+  p { color: var(--muted); }
+  p em { color: var(--text); font-style: italic; }
+  .org-name { color: var(--text); font-weight: 600; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="label">ISEA 2026: ELYAH — Dubai</div>
+  <h1>Counting Cultural Stars</h1>
+  <p class="subtitle">Transforming Poetry into Volumetric Constellations</p>
+
+  <h2>Workshop Basic Information</h2>
+  <table class="basic-info">
+    <tr><th>Type</th><td>Workshop</td></tr>
+    <tr><th>Projected Duration</th><td>Online — 4-hour primary version, with a 2-hour compressed alternative</td></tr>
+    <tr><th>Organizers &amp; Affiliations</th><td>
+      <span class="org-name">Bin Youn</span>, Associate Lecturer in Digital Media, RMIT University Vietnam<br>
+      <span class="org-name">Ng Yi Kee</span>, Part time Lecturer, Multimedia University Malaysia
+    </td></tr>
+    <tr><th>ISEA 2026 Thematic Pillars</th><td>
+      <span class="pillar">Charting Constellations</span> (primary), <span class="pillar">Celestial Dialogues</span> (secondary)
+    </td></tr>
+    <tr><th>Project Repository</th><td><a href="https://github.com/binyoun/cultural-text-galaxy" target="_blank" rel="noopener">github.com/binyoun/cultural-text-galaxy</a></td></tr>
+  </table>
+
+  <h2>Abstract</h2>
+  <p>
+    <em>Counting Cultural Stars</em> is a beginner-friendly creative workshop where participants transform meaningful cultural words into animated 3D star-like constellations using TouchDesigner. Inspired by Yoon Dong-ju's 1941 poem <em>Counting the Stars at Night</em>, where naming stars was a way of preserving suppressed identities, the workshop explores how names, memories, and cultural language can become moving particles that drift, gather, and spread in space.
+  </p>
+  <p>
+    The workshop begins with an introduction to the poem's historical context and its connection to the ISEA 2026 theme ELYAH. Participants then write cultural words, names, places, untranslatable concepts, on paper in their own languages, following a radial writing structure provided in a step-by-step guide. Participants photograph their own handwritten text and upload it into the system. Participants then learn to use TouchDesigner's ready-made tools to transform their cultural words into dynamic point-cloud constellations.
+  </p>
+  <p>
+    Through a step-by-step guided interface, participants experiment with core behaviors such as turbulence, attraction, and clustering, focusing on both technical understanding and creative interpretation. This workflow comes directly from the organizers' ongoing research on reconfiguring images as behavioral systems, and the entire workshop process will be documented as a video.
+  </p>
+  <p>
+    No programming or TouchDesigner background is required. The workshop is designed to be welcoming, guided, and accessible for all levels.
+  </p>
+
+  <footer>
+    Full proposal (schedule, participant requirements, figures) available on request.
+  </footer>
+</main>
+</body>
+</html>
