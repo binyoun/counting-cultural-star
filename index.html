@@ -65,6 +65,34 @@
     margin: 0 0 40px;
   }
   .when span { color: var(--muted); }
+  .notice {
+    border: 1px solid var(--accent-2);
+    padding: 16px 20px;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+  .notice strong { color: var(--accent-2); font-weight: 600; }
+  .people {
+    display: grid;
+    gap: 12px;
+  }
+  @media (min-width: 640px) {
+    .people { grid-template-columns: 1fr 1fr; }
+  }
+  .person {
+    border: 1px solid var(--line);
+    background: var(--bg-alt);
+    padding: 18px 20px;
+  }
+  .person h3 { margin: 0; font-size: 1.05rem; color: var(--text); }
+  .person .role {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin: 2px 0 10px;
+  }
+  .person p { margin: 0; font-size: 0.95rem; }
   h2 {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
@@ -175,6 +203,8 @@
   <p class="subtitle">Transforming Cultural Texts into Volumetric Constellations</p>
   <p class="when">Monday 9 November 2026, 11:45 to 15:45 GST<br><span>14:45 to 18:45 Vietnam &middot; 15:45 to 19:45 Malaysia</span></p>
 
+  <div class="notice"><strong>Before you join:</strong> please do step 1 ahead of the session. TouchDesigner is a large download and needs a free Derivative account to activate. Downloading the starter file early also saves time on the day.</div>
+
   <h2>Your path through the workshop</h2>
   <ol class="steps">
     <li>
@@ -215,6 +245,20 @@
     </li>
   </ol>
 
+  <h2>Your facilitators</h2>
+  <div class="people">
+    <div class="person">
+      <h3>Bin Youn</h3>
+      <div class="role">RMIT University Vietnam</div>
+      <p>Bin Youn is a Korean interdisciplinary artist, educator and researcher based in Ho Chi Minh City. She creates participatory augmented reality and sensing works that people complete through gesture, stillness and touch, including the Gelora series and Uncanny Garden (ACM SIGGRAPH 2026). In this workshop she leads the writing and the shared galaxy.</p>
+    </div>
+    <div class="person">
+      <h3>Ng Yi Kee</h3>
+      <div class="role">Multimedia University, Malaysia</div>
+      <p>Ng Yi Kee is a sound artist and educator at Multimedia University, Cyberjaya, where she teaches TouchDesigner and visual programming. Through field recording and sound installation, she explores how changing landscapes reshape the relations between humans, nonhuman beings and the spaces they share. In this workshop she leads the TouchDesigner sessions.</p>
+    </div>
+  </div>
+
   <h2>About the workshop</h2>
   <p>
     <em>Counting Cultural Stars</em> is a beginner-friendly creative workshop where participants transform meaningful cultural words into animated 3D star-like constellations using TouchDesigner. Inspired by Yoon Dong-ju's 1941 poem <em>Counting the Stars at Night</em>, where naming stars was a way of preserving suppressed identities, the workshop explores how names, memories, and cultural language can become moving particles that drift, gather, and spread in space.
@@ -230,10 +274,6 @@
   </p>
 
   <table class="basic-info">
-    <tr><th>Organizers &amp; Affiliations</th><td>
-      <span class="org-name">Bin Youn</span>, Associate Lecturer in Digital Media, RMIT University Vietnam<br>
-      <span class="org-name">Ng Yi Kee</span>, Part time Lecturer, Multimedia University Malaysia
-    </td></tr>
     <tr><th>ISEA 2026 Thematic Pillars</th><td>
       <span class="pillar">Charting Constellations</span> (primary), <span class="pillar">Celestial Dialogues</span> (secondary)
     </td></tr>
