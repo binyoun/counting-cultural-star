@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Counting Cultural Stars — ISEA 2026 Workshop</title>
+<title>Counting Cultural Stars | ISEA 2026 Workshop</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -57,8 +57,14 @@
   .subtitle {
     color: var(--muted);
     font-size: 1.05rem;
+    margin: 0 0 16px;
+  }
+  .when {
+    color: var(--text);
+    font-size: 0.95rem;
     margin: 0 0 40px;
   }
+  .when span { color: var(--muted); }
   h2 {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
@@ -69,6 +75,53 @@
     padding-bottom: 10px;
     margin: 48px 0 20px;
   }
+  ol.steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 18px 20px 20px 64px;
+    border: 1px solid var(--line);
+    background: var(--bg-alt);
+    margin-bottom: 12px;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    line-height: 26px;
+    text-align: center;
+    color: var(--accent);
+  }
+  ol.steps h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+  ol.steps p { margin: 0 0 12px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a {
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  .links a:hover { background: var(--accent); color: var(--bg); }
   table.basic-info {
     width: 100%;
     border-collapse: collapse;
@@ -106,29 +159,63 @@
     color: var(--muted);
   }
   footer a { color: var(--accent); }
+  @media (max-width: 520px) {
+    main { padding: 40px 16px 72px; }
+    ol.steps li { padding: 16px 16px 18px 56px; }
+    ol.steps li::before { left: 16px; top: 16px; }
+    table.basic-info th, table.basic-info td { display: block; width: 100%; }
+    table.basic-info th { border-bottom: none; }
+  }
 </style>
 </head>
 <body>
 <main>
-  <div class="label">ISEA 2026: ELYAH — Dubai</div>
+  <div class="label">ISEA 2026: ELYAH, Dubai &middot; Online Stream 4</div>
   <h1>Counting Cultural Stars</h1>
-  <p class="subtitle">Transforming Poetry into Volumetric Constellations</p>
+  <p class="subtitle">Transforming Cultural Texts into Volumetric Constellations</p>
+  <p class="when">Monday 9 November 2026, 11:45 to 15:45 GST<br><span>14:45 to 18:45 Vietnam &middot; 15:45 to 19:45 Malaysia</span></p>
 
-  <h2>Workshop Basic Information</h2>
-  <table class="basic-info">
-    <tr><th>Type</th><td>Workshop</td></tr>
-    <tr><th>Projected Duration</th><td>Online — 4-hour primary version, with a 2-hour compressed alternative</td></tr>
-    <tr><th>Organizers &amp; Affiliations</th><td>
-      <span class="org-name">Bin Youn</span>, Associate Lecturer in Digital Media, RMIT University Vietnam<br>
-      <span class="org-name">Ng Yi Kee</span>, Part time Lecturer, Multimedia University Malaysia
-    </td></tr>
-    <tr><th>ISEA 2026 Thematic Pillars</th><td>
-      <span class="pillar">Charting Constellations</span> (primary), <span class="pillar">Celestial Dialogues</span> (secondary)
-    </td></tr>
-    <tr><th>Project Repository</th><td><a href="https://github.com/binyoun/cultural-text-galaxy" target="_blank" rel="noopener">github.com/binyoun/cultural-text-galaxy</a></td></tr>
-  </table>
+  <h2>Your path through the workshop</h2>
+  <ol class="steps">
+    <li>
+      <h3>Before we begin</h3>
+      <p>Install TouchDesigner (the free licence) and open it once. Have paper, a dark pen, a phone or camera, and a mouse ready.</p>
+      <div class="links">
+        <a href="https://derivative.ca/product/touchdesigner-non-commercial/77" target="_blank" rel="noopener">Download TouchDesigner</a>
+      </div>
+    </li>
+    <li>
+      <h3>Write your word</h3>
+      <p>A word, a name or a place, in your own language and script. Write it on the rays of the template and leave the centre empty.</p>
+      <div class="links">
+        <a href="https://cultural-text-galaxy.onrender.com/guide" target="_blank" rel="noopener">Writing guide</a>
+        <a href="https://cultural-text-galaxy.onrender.com/template" target="_blank" rel="noopener">Template</a>
+      </div>
+    </li>
+    <li>
+      <h3>Send your star</h3>
+      <p>Photograph your page from straight above, choose a colour and send it. Your word is given a star in the shared sky.</p>
+      <div class="links">
+        <a href="https://cultural-text-galaxy.onrender.com/up" target="_blank" rel="noopener">Send your star</a>
+      </div>
+    </li>
+    <li>
+      <h3>Build your constellation</h3>
+      <p>Open the starter file in TouchDesigner and bring in the same photo. Your handwriting is traced into 3D space, then you shape how it moves.</p>
+      <div class="links">
+        <a href="https://cultural-text-galaxy.onrender.com/starter" target="_blank" rel="noopener">Starter file</a>
+      </div>
+    </li>
+    <li>
+      <h3>Watch the shared sky</h3>
+      <p>Every word sent today gathers in one galaxy, live.</p>
+      <div class="links">
+        <a href="https://cultural-text-galaxy.onrender.com/galaxy" target="_blank" rel="noopener">Watch live</a>
+      </div>
+    </li>
+  </ol>
 
-  <h2>Abstract</h2>
+  <h2>About the workshop</h2>
   <p>
     <em>Counting Cultural Stars</em> is a beginner-friendly creative workshop where participants transform meaningful cultural words into animated 3D star-like constellations using TouchDesigner. Inspired by Yoon Dong-ju's 1941 poem <em>Counting the Stars at Night</em>, where naming stars was a way of preserving suppressed identities, the workshop explores how names, memories, and cultural language can become moving particles that drift, gather, and spread in space.
   </p>
@@ -142,8 +229,19 @@
     No programming or TouchDesigner background is required. The workshop is designed to be welcoming, guided, and accessible for all levels.
   </p>
 
+  <table class="basic-info">
+    <tr><th>Organizers &amp; Affiliations</th><td>
+      <span class="org-name">Bin Youn</span>, Associate Lecturer in Digital Media, RMIT University Vietnam<br>
+      <span class="org-name">Ng Yi Kee</span>, Part time Lecturer, Multimedia University Malaysia
+    </td></tr>
+    <tr><th>ISEA 2026 Thematic Pillars</th><td>
+      <span class="pillar">Charting Constellations</span> (primary), <span class="pillar">Celestial Dialogues</span> (secondary)
+    </td></tr>
+    <tr><th>Project Repository</th><td><a href="https://github.com/binyoun/cultural-text-galaxy" target="_blank" rel="noopener">github.com/binyoun/cultural-text-galaxy</a></td></tr>
+  </table>
+
   <footer>
-    Full proposal (schedule, participant requirements, figures) available on request.
+    During the session, ask anything in the chat. Bin and Yi Kee are both here to help.
   </footer>
 </main>
 </body>
