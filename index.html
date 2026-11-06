@@ -101,6 +101,11 @@
   }
   .person .contact a { color: var(--accent); text-decoration: none; }
   .person .contact a:hover { text-decoration: underline; }
+  .posters { display: grid; gap: 12px; margin: 0 0 8px; }
+  @media (min-width: 640px) { .posters { grid-template-columns: 1fr 1fr; } }
+  .posters figure { margin: 0; border: 1px solid var(--line); background: var(--bg-alt); }
+  .posters img { display: block; width: 100%; height: auto; }
+  .posters figcaption { padding: 10px 14px; font-family: 'Space Mono', monospace; font-size: 0.72rem; color: var(--muted); }
   h2 {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
@@ -206,12 +211,19 @@
 </head>
 <body>
 <main>
-  <div class="label">ISEA 2026: ELYAH, Dubai &middot; Online Stream 4</div>
+  <div class="label">ISEA 2026: ELYAH, Dubai &middot; Online Academic Programme &middot; Online Stream 4</div>
   <h1>Counting Cultural Stars</h1>
   <p class="subtitle">Transforming Cultural Texts into Volumetric Constellations</p>
   <p class="when">Monday 9 November 2026, 11:45 to 15:45 GST<br><span>14:45 to 18:45 Vietnam &middot; 15:45 to 19:45 Malaysia</span></p>
 
   <div class="notice"><strong>Before you join:</strong> please do step 1 ahead of the session. TouchDesigner is a large download and needs a free Derivative account to activate. Downloading the starter file early also saves time on the day.<br><br><strong>Recording and consent:</strong> ISEA records the session for its archive. If you send your photo, your handwriting and anything you share in the chat may appear in the shared galaxy, the recording and our documentation. You can take part without sending your photo, or ask us in the chat to remove your star.</div>
+
+  <h2>In the ISEA programme</h2>
+  <p>Part of the <em>Code, AI and Cultural Experience Workshops</em> in the ISEA 2026 Online Academic Programme, streamed on Online Stream 4.</p>
+  <div class="posters">
+    <figure><img src="img/isea-programme.jpg" alt="ISEA 2026 ELYAH Dubai poster: Code, AI and Cultural Experience Workshops, Online Academic Programme" loading="lazy"><figcaption>Code, AI and Cultural Experience Workshops</figcaption></figure>
+    <figure><img src="img/isea-session.jpg" alt="ISEA 2026 session poster: Counting Cultural Stars, 9 November, Online Stream 04, with Bin Youn and Ng Yi Kee" loading="lazy"><figcaption>Counting Cultural Stars, 9 November, Online Stream 04</figcaption></figure>
+  </div>
 
   <h2>Your path through the workshop</h2>
   <ol class="steps">
