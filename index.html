@@ -111,11 +111,6 @@
   }
   .person .contact a { color: var(--accent); text-decoration: none; }
   .person .contact a:hover { text-decoration: underline; }
-  .posters { display: grid; gap: 12px; margin: 0 0 8px; }
-  @media (min-width: 640px) { .posters { grid-template-columns: 1fr 1fr; } }
-  .posters figure { margin: 0; border: 1px solid var(--line); background: var(--bg-alt); }
-  .posters img { display: block; width: 100%; height: auto; }
-  .posters figcaption { padding: 10px 14px; font-family: 'Space Mono', monospace; font-size: 0.72rem; color: var(--muted); }
   h2 {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
@@ -230,13 +225,9 @@
 
   <h2>In the ISEA programme</h2>
   <p>Part of the <em>Code, AI and Cultural Experience Workshops</em> in the ISEA 2026 Online Academic Programme, streamed on Online Stream 4.</p>
-  <div class="posters">
-    <figure><img src="img/isea-programme.jpg" alt="ISEA 2026 ELYAH Dubai poster: Code, AI and Cultural Experience Workshops, Online Academic Programme" loading="lazy"><figcaption>Code, AI and Cultural Experience Workshops</figcaption></figure>
-    <figure><img src="img/isea-session.jpg" alt="ISEA 2026 session poster: Counting Cultural Stars, 9 November, Online Stream 04, with Bin Youn and Ng Yi Kee" loading="lazy"><figcaption>Counting Cultural Stars, 9 November, Online Stream 04</figcaption></figure>
-  </div>
 
   <h2>Your path through the workshop</h2>
-  <div class="notice"><strong>Short on time, or no TouchDesigner?</strong> Paper, a pen and a phone are enough. Write your word, photograph it and send it, and your star joins the shared galaxy. To be in the reveal, send by 15:30 GST (18:30 Vietnam, 19:30 Malaysia).
+  <div class="notice"><strong>Short on time, or no TouchDesigner?</strong> Paper, a pen and a phone are enough. Follow steps 2 and 3 below to write your word and send a photo of it, and your star joins the shared galaxy. To be in the reveal, send by 15:30 GST (18:30 Vietnam, 19:30 Malaysia).
     <div class="quick-path">
       <figure><img src="img/icon-write.png" alt=""><figcaption>Write</figcaption></figure>
       <span aria-hidden="true">&rarr;</span>
@@ -265,18 +256,18 @@
     </li>
     <li>
       <h3>Send your star</h3>
-      <p>Photograph your page from straight above, pick a region if you like (optional) and a colour, and send it. Your word is given a star in the shared sky. If sending does not work, add your photo to the shared folder.</p>
+      <p>Photograph your page from straight above, pick a colour, and if you like a region and how your star moves (both optional), and send it. Your word is given a star in the shared sky. If sending does not work, add your photo to the shared folder. Using TouchDesigner? Lift your ink too: this removes the paper from your photo and saves just your writing as a PNG. Save it on the computer you use for TouchDesigner.</p>
       <div class="links">
         <a href="https://cultural-text-galaxy.onrender.com/up" target="_blank" rel="noopener">Send your star</a>
+        <a href="https://cultural-text-galaxy.onrender.com/ink" target="_blank" rel="noopener">Lift your ink</a>
         <a href="https://drive.google.com/drive/folders/1iVexOWVUR6eXpq_78TxonKzfUcKSzMNo" target="_blank" rel="noopener">Shared folder</a>
       </div>
     </li>
     <li>
       <h3>Build your constellation</h3>
-      <p>Open the starter file in TouchDesigner. Lift your ink: this removes the paper from your photo and saves just your writing as a PNG. Load that PNG as Yi Kee shows you, then shape how it moves. Share your exported video in the shared folder.</p>
+      <p>Open the starter file in TouchDesigner. Load your PNG as Yi Kee shows you, then shape how it moves. Share your exported video in the shared folder.</p>
       <div class="links">
         <a href="https://cultural-text-galaxy.onrender.com/starter" target="_blank" rel="noopener">Starter file</a>
-        <a href="https://cultural-text-galaxy.onrender.com/ink" target="_blank" rel="noopener">Lift your ink</a>
         <a href="https://drive.google.com/drive/folders/1iVexOWVUR6eXpq_78TxonKzfUcKSzMNo" target="_blank" rel="noopener">Shared folder</a>
       </div>
     </li>
@@ -316,6 +307,9 @@
     <em>Counting Cultural Stars</em> is a beginner-friendly creative workshop where participants transform meaningful cultural words into animated 3D star-like constellations using TouchDesigner. Inspired by Yoon Dong-ju's 1941 poem <em>Counting the Stars at Night</em>, where naming stars was a way of preserving suppressed identities, the workshop explores how names, memories, and cultural language can become moving particles that drift, gather, and spread in space.
   </p>
   <p>
+    Read the full poem <a href="#poem" style="color: var(--accent);">in English</a>, at the end of this page, or <a href="https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=9000761&amp;menuNo=200019" target="_blank" rel="noopener" style="color: var(--accent);">in Korean</a> (Korea Copyright Commission).
+  </p>
+  <p>
     The workshop begins with an introduction to the poem's historical context and its connection to the ISEA 2026 theme ELYAH. Participants then write cultural words, names, places, untranslatable concepts, on paper in their own languages, following a radial writing structure provided in a step-by-step guide. Participants photograph their own handwritten text and upload it into the system. Participants then learn to use TouchDesigner's ready-made tools to transform their cultural words into dynamic point-cloud constellations.
   </p>
   <p>
@@ -331,6 +325,20 @@
     </td></tr>
     <tr><th>Project Repository</th><td><a href="https://github.com/binyoun/cultural-text-galaxy" target="_blank" rel="noopener">github.com/binyoun/cultural-text-galaxy</a></td></tr>
   </table>
+
+  <h2 id="poem">The poem</h2>
+  <p><em>Counting the Stars at Night</em><br>Yoon Dong-ju, 5 November 1941<br>English translation: Claude and Bin Youn</p>
+  <p>The sky where the seasons pass<br>is full of autumn.</p>
+  <p>With no worry at all, I feel<br>I could count every star in the autumn.</p>
+  <p>The stars carved into my heart, one by one:<br>I cannot count them all now,<br>because morning comes too soon,<br>because tomorrow night remains,<br>because my youth is not yet over.</p>
+  <p>for one star, memory,<br>for one star, love,<br>for one star, loneliness,<br>for one star, longing,<br>for one star, poetry,<br>for one star, mother, mother,</p>
+  <p>Mother, I call out one beautiful word for each star. The names of the children who shared my desk at primary school; the names of foreign girls, Pae, Gyeong, Ok; the names of girls who are already mothers of babies; the names of poor neighbours; dove, puppy, rabbit, mule, roe deer; "Francis Jammes", "Rainer Maria Rilke", the names of poets like these I call out.</p>
+  <p>They are too far away,<br>as far and faint as the stars.</p>
+  <p>Mother,<br>and you are far away, in Bukgando.*</p>
+  <p>Longing for something,<br>on this hill where so much starlight fell<br>I wrote out my name<br>and covered it over with soil.</p>
+  <p>No wonder the insects cry all through the night:<br>they are grieving over a name of shame.</p>
+  <p>But when winter passes and spring comes to my star too,<br>as green grass rises over a grave,<br>on the hill where my name lies buried<br>the grass will grow dense and lush, like pride.</p>
+  <p>* Bukgando: a Korean community in what is now northeast China (Jilin Province), where the poet's family lived.</p>
 
   <footer>
     During the session, ask anything in the chat. Bin and Yi Kee are both here to help.
