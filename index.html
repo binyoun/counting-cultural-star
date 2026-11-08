@@ -73,6 +73,15 @@
   }
   .notice strong { color: var(--accent-2); font-weight: 600; }
   .notice + ol.steps { margin-top: 12px; }
+  .quick-path { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-top: 16px; }
+  .quick-path figure { margin: 0; text-align: center; }
+  .quick-path img { display: block; width: 64px; height: 64px; margin: 0 auto 4px; }
+  .quick-path figcaption { font-size: 0.8rem; color: var(--muted); }
+  .quick-path span { color: #e8c99d; }
+  @media (max-width: 520px) {
+    .quick-path img { width: 46px; height: 46px; }
+    .quick-path figcaption { font-size: 0.7rem; }
+  }
   .people {
     display: grid;
     gap: 12px;
@@ -227,7 +236,17 @@
   </div>
 
   <h2>Your path through the workshop</h2>
-  <div class="notice"><strong>Leaving early?</strong> You can follow the steps on this page, send your star and still join the shared galaxy. You only need paper, a pen and a phone, not TouchDesigner. To be in the reveal, send by 15:30 GST (18:30 Vietnam, 19:30 Malaysia).</div>
+  <div class="notice"><strong>Short on time, or no TouchDesigner?</strong> Paper, a pen and a phone are enough. Write your word, photograph it and send it, and your star joins the shared galaxy. To be in the reveal, send by 15:30 GST (18:30 Vietnam, 19:30 Malaysia).
+    <div class="quick-path">
+      <figure><img src="img/icon-write.png" alt=""><figcaption>Write</figcaption></figure>
+      <span aria-hidden="true">&rarr;</span>
+      <figure><img src="img/icon-phone.png" alt=""><figcaption>Photograph</figcaption></figure>
+      <span aria-hidden="true">&rarr;</span>
+      <figure><img src="img/icon-send.png" alt=""><figcaption>Send</figcaption></figure>
+      <span aria-hidden="true">&rarr;</span>
+      <figure><img src="img/icon-sky.png" alt=""><figcaption>Your star</figcaption></figure>
+    </div>
+  </div>
   <ol class="steps">
     <li>
       <h3>Before we begin</h3>
@@ -238,7 +257,7 @@
     </li>
     <li>
       <h3>Write your word</h3>
-      <p>A word, a name or a place, in your own language and script. Write it on the rays of the template and leave the centre empty.</p>
+      <p>A word, a name or a place, in your own language and script. Write it slowly, by hand, on the rays of the template and leave the centre empty. Your hand remembers what you write.</p>
       <div class="links">
         <a href="https://cultural-text-galaxy.onrender.com/guide" target="_blank" rel="noopener">Writing guide</a>
         <a href="https://cultural-text-galaxy.onrender.com/template" target="_blank" rel="noopener">Template</a>
