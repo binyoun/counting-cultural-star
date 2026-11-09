@@ -83,7 +83,9 @@
     .quick-path figcaption { font-size: 0.7rem; }
   }
   figure.record { margin: 0 0 12px; }
-  figure.record img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+  figure.record img, figure.record video { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #00001c; }
+  .record-grid { display: grid; gap: 16px; margin-bottom: 12px; }
+  .record-grid figure:first-child { width: 100%; max-width: 560px; margin-left: auto; margin-right: auto; }
   figure.record figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
   .record-links { margin-bottom: 8px; }
   .record-head { margin: 32px 0 4px; font-size: 1.05rem; color: var(--text); }
@@ -232,10 +234,16 @@
   <div class="notice"><strong>This workshop has taken place.</strong> Counting Cultural Stars ran on 9 November 2026. This page is now kept as its record, and the guide further down is left as participants used it on the day.<br><br>The sky stays open until 15 November 2026. You can still <a href="https://cultural-text-galaxy.onrender.com/up" target="_blank" rel="noopener" style="color: var(--accent);">add a word</a>.</div>
 
   <h2>Workshop record</h2>
-  <figure class="record">
-    <img src="img/shared-sky-9nov2026.jpg" alt="A sphere of fine curved lines on a dark background, with handwritten words and marks placed as stars across its surface.">
-    <figcaption>The shared sky after the session, with 8 handwritten contributions, each kept as it was sent.</figcaption>
-  </figure>
+  <div class="record-grid">
+    <figure class="record">
+      <video src="img/shared-sky-motion.mp4" poster="img/shared-sky-motion-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="The words fly across a spiral star chart, which rises into a turning globe of fine lines."></video>
+      <figcaption>The shared sky with 8 handwritten contributions, each kept as it was sent. The words find their places, and the chart rises into a globe.</figcaption>
+    </figure>
+    <figure class="record record-wide">
+      <video src="img/final-galaxy.mp4" poster="img/final-galaxy-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Glowing handwritten words and points of light drift through a dark space."></video>
+      <figcaption>The final galaxy in TouchDesigner, by Ng Yi Kee.</figcaption>
+    </figure>
+  </div>
   <div class="links record-links">
     <a href="https://cultural-text-galaxy.onrender.com/galaxy" target="_blank" rel="noopener">View the shared sky</a>
   </div>
@@ -375,5 +383,10 @@
     During the session, ask anything in the chat. Bin and Yi Kee are both here to help.
   </footer>
 </main>
+<script>
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('figure.record video').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+  }
+</script>
 </body>
 </html>
